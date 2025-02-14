@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes change-color {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: rgb(255, 196, 0);
+          height: 150px;
+          width: 150px;
+        }
+        50% {
+          background-color: rgb(132, 255, 0);
+          height: 200px;
+          width: 200px;
+        }
+        75% {
+          background-color: rgb(0, 221, 255);
+        }
+        100% {
+          background-color: rgb(123, 0, 255);
+        }
+      }
+
+       div {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        
+      } 
+      
+      @keyframes flip-2-hor-top-1 {
+        0% {
+          transform: translateY(0) rotateX(0);
+          transform-origin: 50% 0%;
+        }
+        100% {
+          transform: translateY(-100%) rotateX(-180deg);
+          transform-origin: 50% 100%;
+        }
+      }
+
+      .flip-2-hor-top-1 {
+        animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+          both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flip-2-hor-top-1"></div>
+  </body>
+</html>
