@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #2a2a30;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      ul > li {
+        color: rgb(21, 125, 216);
+        font-weight: bold;
+      }
+
+      h1,p {
+        background-color: #3535b1;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      input[type="text"] {
+        color: blue;
+        border: 2px solid rgb(21, 125, 216);
+      }
+
+      input[placeholder="Enter your password"] {
+        color: rgb(17, 195, 28);
+        border: 2px solid rgb(27, 216, 21);
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: rgb(21, 125, 216);
+        border: none;
+        font-size: 20px;
+        color: wheat;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-color: #0d8523;
+        transform: scale(1.1);
+      }
+
+      a {
+        text-decoration: none;
+        color: #3535b1;
+      }
+
+      li::before {
+        content: "🚀";
+      }
+
+      a::after {
+        content: "🚀";
+      }
+
+      p::first-letter {
+        color: red;
+        font-size: 25px;
+      }
+
+      li:nth-child(even) {
+        color: green;
+      }
+
+      p:not(:first-of-type) {
+        text-decoration: underline;
+        color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>
+      <p>Hello</p>
+    </h1>
+    <h1>Space Explorer's club</h1>
+    <ul>
+      <li>Moon missons</li>
+      <li>Mars Rover</li>
+      <li>Space station</li>
+      <li>Black hole mystry</li>
+    </ul>
+
+    <li>Hi</li>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,
+      impedit?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dicta?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dicta?</p>
+
+    <input type="text" placeholder="Enter Your Name" />
+    <input type="password" placeholder="Enter your password" />
+    <br />
+    <a href="">Join Our Mission</a>
+    <a href="">Let's Explore</a>
+
+    <br />
+    <br />
+    <button>Submit</button>
+  </body>
+</html>
